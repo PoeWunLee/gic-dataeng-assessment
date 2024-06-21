@@ -1,0 +1,163 @@
+[2024-06-21T03:13:50.112+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-21T03:13:50.145+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gic_main_dag.transform manual__2024-06-21T03:13:21+00:00 [queued]>
+[2024-06-21T03:13:50.156+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gic_main_dag.transform manual__2024-06-21T03:13:21+00:00 [queued]>
+[2024-06-21T03:13:50.157+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-21T03:13:50.197+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform> on 2024-06-21 03:13:21+00:00
+[2024-06-21T03:13:50.219+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1519) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-21T03:13:50.223+0000] {standard_task_runner.py:63} INFO - Started process 1521 to run task
+[2024-06-21T03:13:50.223+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'gic_main_dag', 'transform', 'manual__2024-06-21T03:13:21+00:00', '--job-id', '214', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpt5sqqj4y']
+[2024-06-21T03:13:50.225+0000] {standard_task_runner.py:91} INFO - Job 214: Subtask transform
+[2024-06-21T03:13:50.278+0000] {task_command.py:426} INFO - Running <TaskInstance: gic_main_dag.transform manual__2024-06-21T03:13:21+00:00 [running]> on host 39e4faefdcb7
+[2024-06-21T03:13:50.382+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='gic_main_dag' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2024-06-21T03:13:21+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-21T03:13:21+00:00'
+[2024-06-21T03:13:50.384+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-21T03:13:50.402+0000] {logging_mixin.py:188} INFO - File No. 0. Initiating load for Applebead, extract date 28-02-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.28-02-2023 breakdown.csv
+[2024-06-21T03:13:50.409+0000] {logging_mixin.py:188} INFO - File No. 1. Initiating load for Applebead, extract date 30-04-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.30-04-2023 breakdown.csv
+[2024-06-21T03:13:50.416+0000] {logging_mixin.py:188} INFO - File No. 2. Initiating load for Applebead, extract date 30-06-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.30-06-2023 breakdown.csv
+[2024-06-21T03:13:50.423+0000] {logging_mixin.py:188} INFO - File No. 3. Initiating load for Applebead, extract date 30-09-2022 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.30-09-2022 breakdown.csv
+[2024-06-21T03:13:50.429+0000] {logging_mixin.py:188} INFO - File No. 4. Initiating load for Applebead, extract date 30-11-2022 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.30-11-2022 breakdown.csv
+[2024-06-21T03:13:50.435+0000] {logging_mixin.py:188} INFO - File No. 5. Initiating load for Applebead, extract date 31-01-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-01-2023 breakdown.csv
+[2024-06-21T03:13:50.441+0000] {logging_mixin.py:188} INFO - File No. 6. Initiating load for Applebead, extract date 31-03-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-03-2023 breakdown.csv
+[2024-06-21T03:13:50.447+0000] {logging_mixin.py:188} INFO - File No. 7. Initiating load for Applebead, extract date 31-05-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-05-2023 breakdown.csv
+[2024-06-21T03:13:50.454+0000] {logging_mixin.py:188} INFO - File No. 8. Initiating load for Applebead, extract date 31-07-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-07-2023 breakdown.csv
+[2024-06-21T03:13:50.461+0000] {logging_mixin.py:188} INFO - File No. 9. Initiating load for Applebead, extract date 31-08-2022 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-08-2022 breakdown.csv
+[2024-06-21T03:13:50.468+0000] {logging_mixin.py:188} INFO - File No. 10. Initiating load for Applebead, extract date 31-08-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-08-2023 breakdown.csv
+[2024-06-21T03:13:50.476+0000] {logging_mixin.py:188} INFO - File No. 11. Initiating load for Applebead, extract date 31-10-2022 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-10-2022 breakdown.csv
+[2024-06-21T03:13:50.486+0000] {logging_mixin.py:188} INFO - File No. 12. Initiating load for Applebead, extract date 31-12-2022 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-12-2022 breakdown.csv
+[2024-06-21T03:13:50.492+0000] {logging_mixin.py:188} INFO - File No. 13. Initiating load for Belaware, extract date 28-02-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.28_02_2023.csv
+[2024-06-21T03:13:50.498+0000] {logging_mixin.py:188} INFO - File No. 14. Initiating load for Belaware, extract date 30-04-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.30_04_2023.csv
+[2024-06-21T03:13:50.511+0000] {logging_mixin.py:188} INFO - File No. 15. Initiating load for Belaware, extract date 30-06-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.30_06_2023.csv
+[2024-06-21T03:13:50.521+0000] {logging_mixin.py:188} INFO - File No. 16. Initiating load for Belaware, extract date 30-09-2022 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.30_09_2022.csv
+[2024-06-21T03:13:50.529+0000] {logging_mixin.py:188} INFO - File No. 17. Initiating load for Belaware, extract date 30-11-2022 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.30_11_2022.csv
+[2024-06-21T03:13:50.544+0000] {logging_mixin.py:188} INFO - File No. 18. Initiating load for Belaware, extract date 31-01-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_01_2023.csv
+[2024-06-21T03:13:50.555+0000] {logging_mixin.py:188} INFO - File No. 19. Initiating load for Belaware, extract date 31-03-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_03_2023.csv
+[2024-06-21T03:13:50.569+0000] {logging_mixin.py:188} INFO - File No. 20. Initiating load for Belaware, extract date 31-05-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_05_2023.csv
+[2024-06-21T03:13:50.580+0000] {logging_mixin.py:188} INFO - File No. 21. Initiating load for Belaware, extract date 31-07-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_07_2023.csv
+[2024-06-21T03:13:50.590+0000] {logging_mixin.py:188} INFO - File No. 22. Initiating load for Belaware, extract date 31-08-2022 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_08_2022.csv
+[2024-06-21T03:13:50.599+0000] {logging_mixin.py:188} INFO - File No. 23. Initiating load for Belaware, extract date 31-08-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_08_2023.csv
+[2024-06-21T03:13:50.610+0000] {logging_mixin.py:188} INFO - File No. 24. Initiating load for Belaware, extract date 31-10-2022 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_10_2022.csv
+[2024-06-21T03:13:50.619+0000] {logging_mixin.py:188} INFO - File No. 25. Initiating load for Belaware, extract date 31-12-2022 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_12_2022.csv
+[2024-06-21T03:13:50.628+0000] {logging_mixin.py:188} INFO - File No. 26. Initiating load for Whitestone, extract date 28-02-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.28-02-2023 - details.csv
+[2024-06-21T03:13:50.639+0000] {logging_mixin.py:188} INFO - File No. 27. Initiating load for Whitestone, extract date 30-04-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.30-04-2023 - details.csv
+[2024-06-21T03:13:50.646+0000] {logging_mixin.py:188} INFO - File No. 28. Initiating load for Whitestone, extract date 30-06-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.30-06-2023 - details.csv
+[2024-06-21T03:13:50.651+0000] {logging_mixin.py:188} INFO - File No. 29. Initiating load for Whitestone, extract date 30-09-2022 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.30-09-2022 - details.csv
+[2024-06-21T03:13:50.657+0000] {logging_mixin.py:188} INFO - File No. 30. Initiating load for Whitestone, extract date 30-11-2022 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.30-11-2022 - details.csv
+[2024-06-21T03:13:50.662+0000] {logging_mixin.py:188} INFO - File No. 31. Initiating load for Whitestone, extract date 31-01-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-01-2023 - details.csv
+[2024-06-21T03:13:50.670+0000] {logging_mixin.py:188} INFO - File No. 32. Initiating load for Whitestone, extract date 31-03-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-03-2023 - details.csv
+[2024-06-21T03:13:50.675+0000] {logging_mixin.py:188} INFO - File No. 33. Initiating load for Whitestone, extract date 31-05-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-05-2023 - details.csv
+[2024-06-21T03:13:50.680+0000] {logging_mixin.py:188} INFO - File No. 34. Initiating load for Whitestone, extract date 31-07-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-07-2023 - details.csv
+[2024-06-21T03:13:50.686+0000] {logging_mixin.py:188} INFO - File No. 35. Initiating load for Whitestone, extract date 31-08-2022 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-08-2022 - details.csv
+[2024-06-21T03:13:50.690+0000] {logging_mixin.py:188} INFO - File No. 36. Initiating load for Whitestone, extract date 31-08-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-08-2023 - details.csv
+[2024-06-21T03:13:50.697+0000] {logging_mixin.py:188} INFO - File No. 37. Initiating load for Whitestone, extract date 31-10-2022 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-10-2022 - details.csv
+[2024-06-21T03:13:50.703+0000] {logging_mixin.py:188} INFO - File No. 38. Initiating load for Whitestone, extract date 31-12-2022 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-12-2022 - details.csv
+[2024-06-21T03:13:50.708+0000] {logging_mixin.py:188} INFO - File No. 39. Initiating load for Leeder, extract date 01-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.01_31_2023.csv
+[2024-06-21T03:13:50.714+0000] {logging_mixin.py:188} INFO - File No. 40. Initiating load for Leeder, extract date 02-28-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.02_28_2023.csv
+[2024-06-21T03:13:50.721+0000] {logging_mixin.py:188} INFO - File No. 41. Initiating load for Leeder, extract date 03-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.03_31_2023.csv
+[2024-06-21T03:13:50.727+0000] {logging_mixin.py:188} INFO - File No. 42. Initiating load for Leeder, extract date 04-30-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.04_30_2023.csv
+[2024-06-21T03:13:50.733+0000] {logging_mixin.py:188} INFO - File No. 43. Initiating load for Leeder, extract date 05-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.05_31_2023.csv
+[2024-06-21T03:13:50.740+0000] {logging_mixin.py:188} INFO - File No. 44. Initiating load for Leeder, extract date 06-30-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.06_30_2023.csv
+[2024-06-21T03:13:50.745+0000] {logging_mixin.py:188} INFO - File No. 45. Initiating load for Leeder, extract date 07-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.07_31_2023.csv
+[2024-06-21T03:13:50.752+0000] {logging_mixin.py:188} INFO - File No. 46. Initiating load for Leeder, extract date 08-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.08_31_2022.csv
+[2024-06-21T03:13:50.758+0000] {logging_mixin.py:188} INFO - File No. 47. Initiating load for Leeder, extract date 08-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.08_31_2023.csv
+[2024-06-21T03:13:50.764+0000] {logging_mixin.py:188} INFO - File No. 48. Initiating load for Leeder, extract date 09-30-2022 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.09_30_2022.csv
+[2024-06-21T03:13:50.770+0000] {logging_mixin.py:188} INFO - File No. 49. Initiating load for Leeder, extract date 10-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.10_31_2022.csv
+[2024-06-21T03:13:50.776+0000] {logging_mixin.py:188} INFO - File No. 50. Initiating load for Leeder, extract date 11-30-2022 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.11_30_2022.csv
+[2024-06-21T03:13:50.782+0000] {logging_mixin.py:188} INFO - File No. 51. Initiating load for Leeder, extract date 12-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.12_31_2022.csv
+[2024-06-21T03:13:50.788+0000] {logging_mixin.py:188} INFO - File No. 52. Initiating load for Magnum, extract date 28-02-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.28-02-2023.csv
+[2024-06-21T03:13:50.793+0000] {logging_mixin.py:188} INFO - File No. 53. Initiating load for Magnum, extract date 30-04-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.30-04-2023.csv
+[2024-06-21T03:13:50.800+0000] {logging_mixin.py:188} INFO - File No. 54. Initiating load for Magnum, extract date 30-06-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.30-06-2023.csv
+[2024-06-21T03:13:50.805+0000] {logging_mixin.py:188} INFO - File No. 55. Initiating load for Magnum, extract date 30-09-2022 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.30-09-2022.csv
+[2024-06-21T03:13:50.810+0000] {logging_mixin.py:188} INFO - File No. 56. Initiating load for Magnum, extract date 30-11-2022 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.30-11-2022.csv
+[2024-06-21T03:13:50.817+0000] {logging_mixin.py:188} INFO - File No. 57. Initiating load for Magnum, extract date 31-01-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-01-2023.csv
+[2024-06-21T03:13:50.822+0000] {logging_mixin.py:188} INFO - File No. 58. Initiating load for Magnum, extract date 31-03-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-03-2023.csv
+[2024-06-21T03:13:50.828+0000] {logging_mixin.py:188} INFO - File No. 59. Initiating load for Magnum, extract date 31-05-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-05-2023.csv
+[2024-06-21T03:13:50.834+0000] {logging_mixin.py:188} INFO - File No. 60. Initiating load for Magnum, extract date 31-07-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-07-2023.csv
+[2024-06-21T03:13:50.839+0000] {logging_mixin.py:188} INFO - File No. 61. Initiating load for Magnum, extract date 31-08-2022 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-08-2022.csv
+[2024-06-21T03:13:50.845+0000] {logging_mixin.py:188} INFO - File No. 62. Initiating load for Magnum, extract date 31-08-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-08-2023.csv
+[2024-06-21T03:13:50.852+0000] {logging_mixin.py:188} INFO - File No. 63. Initiating load for Magnum, extract date 31-10-2022 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-10-2022.csv
+[2024-06-21T03:13:50.859+0000] {logging_mixin.py:188} INFO - File No. 64. Initiating load for Magnum, extract date 31-12-2022 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-12-2022.csv
+[2024-06-21T03:13:50.867+0000] {logging_mixin.py:188} INFO - File No. 65. Initiating load for Wallington, extract date 28-02-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.28_02_2023.csv
+[2024-06-21T03:13:50.873+0000] {logging_mixin.py:188} INFO - File No. 66. Initiating load for Wallington, extract date 30-04-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.30_04_2023.csv
+[2024-06-21T03:13:50.880+0000] {logging_mixin.py:188} INFO - File No. 67. Initiating load for Wallington, extract date 30-06-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.30_06_2023.csv
+[2024-06-21T03:13:50.887+0000] {logging_mixin.py:188} INFO - File No. 68. Initiating load for Wallington, extract date 30-09-2022 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.30_09_2022.csv
+[2024-06-21T03:13:50.895+0000] {logging_mixin.py:188} INFO - File No. 69. Initiating load for Wallington, extract date 30-11-2022 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.30_11_2022.csv
+[2024-06-21T03:13:50.903+0000] {logging_mixin.py:188} INFO - File No. 70. Initiating load for Wallington, extract date 31-01-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_01_2023.csv
+[2024-06-21T03:13:50.909+0000] {logging_mixin.py:188} INFO - File No. 71. Initiating load for Wallington, extract date 31-03-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_03_2023.csv
+[2024-06-21T03:13:50.916+0000] {logging_mixin.py:188} INFO - File No. 72. Initiating load for Wallington, extract date 31-05-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_05_2023.csv
+[2024-06-21T03:13:50.921+0000] {logging_mixin.py:188} INFO - File No. 73. Initiating load for Wallington, extract date 31-07-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_07_2023.csv
+[2024-06-21T03:13:50.926+0000] {logging_mixin.py:188} INFO - File No. 74. Initiating load for Wallington, extract date 31-08-2022 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_08_2022.csv
+[2024-06-21T03:13:50.932+0000] {logging_mixin.py:188} INFO - File No. 75. Initiating load for Wallington, extract date 31-08-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_08_2023.csv
+[2024-06-21T03:13:50.938+0000] {logging_mixin.py:188} INFO - File No. 76. Initiating load for Wallington, extract date 31-10-2022 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_10_2022.csv
+[2024-06-21T03:13:50.944+0000] {logging_mixin.py:188} INFO - File No. 77. Initiating load for Wallington, extract date 31-12-2022 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_12_2022.csv
+[2024-06-21T03:13:50.950+0000] {logging_mixin.py:188} INFO - File No. 78. Initiating load for Gohen, extract date 01-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.01-31-2023.csv
+[2024-06-21T03:13:50.957+0000] {logging_mixin.py:188} INFO - File No. 79. Initiating load for Gohen, extract date 02-28-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.02-28-2023.csv
+[2024-06-21T03:13:50.964+0000] {logging_mixin.py:188} INFO - File No. 80. Initiating load for Gohen, extract date 03-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.03-31-2023.csv
+[2024-06-21T03:13:50.970+0000] {logging_mixin.py:188} INFO - File No. 81. Initiating load for Gohen, extract date 04-30-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.04-30-2023.csv
+[2024-06-21T03:13:50.976+0000] {logging_mixin.py:188} INFO - File No. 82. Initiating load for Gohen, extract date 05-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.05-31-2023.csv
+[2024-06-21T03:13:50.984+0000] {logging_mixin.py:188} INFO - File No. 83. Initiating load for Gohen, extract date 06-30-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.06-30-2023.csv
+[2024-06-21T03:13:50.990+0000] {logging_mixin.py:188} INFO - File No. 84. Initiating load for Gohen, extract date 07-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.07-31-2023.csv
+[2024-06-21T03:13:50.996+0000] {logging_mixin.py:188} INFO - File No. 85. Initiating load for Gohen, extract date 08-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.08-31-2022.csv
+[2024-06-21T03:13:51.002+0000] {logging_mixin.py:188} INFO - File No. 86. Initiating load for Gohen, extract date 08-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.08-31-2023.csv
+[2024-06-21T03:13:51.008+0000] {logging_mixin.py:188} INFO - File No. 87. Initiating load for Gohen, extract date 09-30-2022 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.09-30-2022.csv
+[2024-06-21T03:13:51.015+0000] {logging_mixin.py:188} INFO - File No. 88. Initiating load for Gohen, extract date 10-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.10-31-2022.csv
+[2024-06-21T03:13:51.021+0000] {logging_mixin.py:188} INFO - File No. 89. Initiating load for Gohen, extract date 11-30-2022 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.11-30-2022.csv
+[2024-06-21T03:13:51.033+0000] {logging_mixin.py:188} INFO - File No. 90. Initiating load for Gohen, extract date 12-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.12-31-2022.csv
+[2024-06-21T03:13:51.047+0000] {logging_mixin.py:188} INFO - File No. 91. Initiating load for Catalysm, extract date 2022-08-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2022-08-31.csv
+[2024-06-21T03:13:51.064+0000] {logging_mixin.py:188} INFO - File No. 92. Initiating load for Catalysm, extract date 2022-09-30 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2022-09-30.csv
+[2024-06-21T03:13:51.074+0000] {logging_mixin.py:188} INFO - File No. 93. Initiating load for Catalysm, extract date 2022-10-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2022-10-31.csv
+[2024-06-21T03:13:51.087+0000] {logging_mixin.py:188} INFO - File No. 94. Initiating load for Catalysm, extract date 2022-11-30 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2022-11-30.csv
+[2024-06-21T03:13:51.100+0000] {logging_mixin.py:188} INFO - File No. 95. Initiating load for Catalysm, extract date 2022-12-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2022-12-31.csv
+[2024-06-21T03:13:51.110+0000] {logging_mixin.py:188} INFO - File No. 96. Initiating load for Catalysm, extract date 2023-01-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-01-31.csv
+[2024-06-21T03:13:51.121+0000] {logging_mixin.py:188} INFO - File No. 97. Initiating load for Catalysm, extract date 2023-02-28 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-02-28.csv
+[2024-06-21T03:13:51.136+0000] {logging_mixin.py:188} INFO - File No. 98. Initiating load for Catalysm, extract date 2023-03-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-03-31.csv
+[2024-06-21T03:13:51.146+0000] {logging_mixin.py:188} INFO - File No. 99. Initiating load for Catalysm, extract date 2023-04-30 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-04-30.csv
+[2024-06-21T03:13:51.155+0000] {logging_mixin.py:188} INFO - File No. 100. Initiating load for Catalysm, extract date 2023-05-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-05-31.csv
+[2024-06-21T03:13:51.164+0000] {logging_mixin.py:188} INFO - File No. 101. Initiating load for Catalysm, extract date 2023-06-30 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-06-30.csv
+[2024-06-21T03:13:51.173+0000] {logging_mixin.py:188} INFO - File No. 102. Initiating load for Catalysm, extract date 2023-07-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-07-31.csv
+[2024-06-21T03:13:51.182+0000] {logging_mixin.py:188} INFO - File No. 103. Initiating load for Catalysm, extract date 2023-08-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-08-31.csv
+[2024-06-21T03:13:51.191+0000] {logging_mixin.py:188} INFO - File No. 104. Initiating load for Trustmind, extract date 20220831 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20220831.csv
+[2024-06-21T03:13:51.199+0000] {logging_mixin.py:188} INFO - File No. 105. Initiating load for Trustmind, extract date 20220930 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20220930.csv
+[2024-06-21T03:13:51.206+0000] {logging_mixin.py:188} INFO - File No. 106. Initiating load for Trustmind, extract date 20221031 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20221031.csv
+[2024-06-21T03:13:51.211+0000] {logging_mixin.py:188} INFO - File No. 107. Initiating load for Trustmind, extract date 20221130 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20221130.csv
+[2024-06-21T03:13:51.217+0000] {logging_mixin.py:188} INFO - File No. 108. Initiating load for Trustmind, extract date 20221231 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20221231.csv
+[2024-06-21T03:13:51.222+0000] {logging_mixin.py:188} INFO - File No. 109. Initiating load for Trustmind, extract date 20230131 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230131.csv
+[2024-06-21T03:13:51.226+0000] {logging_mixin.py:188} INFO - File No. 110. Initiating load for Trustmind, extract date 20230228 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230228.csv
+[2024-06-21T03:13:51.234+0000] {logging_mixin.py:188} INFO - File No. 111. Initiating load for Trustmind, extract date 20230331 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230331.csv
+[2024-06-21T03:13:51.240+0000] {logging_mixin.py:188} INFO - File No. 112. Initiating load for Trustmind, extract date 20230430 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230430.csv
+[2024-06-21T03:13:51.245+0000] {logging_mixin.py:188} INFO - File No. 113. Initiating load for Trustmind, extract date 20230531 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230531.csv
+[2024-06-21T03:13:51.253+0000] {logging_mixin.py:188} INFO - File No. 114. Initiating load for Trustmind, extract date 20230630 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230630.csv
+[2024-06-21T03:13:51.258+0000] {logging_mixin.py:188} INFO - File No. 115. Initiating load for Trustmind, extract date 20230731 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230731.csv
+[2024-06-21T03:13:51.263+0000] {logging_mixin.py:188} INFO - File No. 116. Initiating load for Trustmind, extract date 20230831 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230831.csv
+[2024-06-21T03:13:51.270+0000] {logging_mixin.py:188} INFO - File No. 117. Initiating load for Virtous, extract date 01-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.01-31-2023 - securities.csv
+[2024-06-21T03:13:51.275+0000] {logging_mixin.py:188} INFO - File No. 118. Initiating load for Virtous, extract date 02-28-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.02-28-2023 - securities.csv
+[2024-06-21T03:13:51.283+0000] {logging_mixin.py:188} INFO - File No. 119. Initiating load for Virtous, extract date 03-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.03-31-2023 - securities.csv
+[2024-06-21T03:13:51.290+0000] {logging_mixin.py:188} INFO - File No. 120. Initiating load for Virtous, extract date 04-30-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.04-30-2023 - securities.csv
+[2024-06-21T03:13:51.296+0000] {logging_mixin.py:188} INFO - File No. 121. Initiating load for Virtous, extract date 05-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.05-31-2023 - securities.csv
+[2024-06-21T03:13:51.302+0000] {logging_mixin.py:188} INFO - File No. 122. Initiating load for Virtous, extract date 06-30-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.06-30-2023 - securities.csv
+[2024-06-21T03:13:51.309+0000] {logging_mixin.py:188} INFO - File No. 123. Initiating load for Virtous, extract date 07-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.07-31-2023 - securities.csv
+[2024-06-21T03:13:51.318+0000] {logging_mixin.py:188} INFO - File No. 124. Initiating load for Virtous, extract date 08-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.08-31-2022 - securities.csv
+[2024-06-21T03:13:51.327+0000] {logging_mixin.py:188} INFO - File No. 125. Initiating load for Virtous, extract date 08-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.08-31-2023 - securities.csv
+[2024-06-21T03:13:51.346+0000] {logging_mixin.py:188} INFO - File No. 126. Initiating load for Virtous, extract date 09-30-2022 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.09-30-2022 - securities.csv
+[2024-06-21T03:13:51.359+0000] {logging_mixin.py:188} INFO - File No. 127. Initiating load for Virtous, extract date 10-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.10-31-2022 - securities.csv
+[2024-06-21T03:13:51.373+0000] {logging_mixin.py:188} INFO - File No. 128. Initiating load for Virtous, extract date 11-30-2022 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.11-30-2022 - securities.csv
+[2024-06-21T03:13:51.380+0000] {logging_mixin.py:188} INFO - File No. 129. Initiating load for Virtous, extract date 12-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.12-31-2022 - securities.csv
+[2024-06-21T03:13:51.530+0000] {python.py:237} INFO - Done. Returned value was: (     financial_type        symbol  ...              hash_uid          isin
+0          Equities           TJX  ...  17864137003341735601           NaN
+1          Equities           SYY  ...  17864137003341735601           NaN
+2          Equities           PNR  ...  17864137003341735601           NaN
+3          Equities           AXP  ...  17864137003341735601           NaN
+4          Equities           COP  ...  17864137003341735601           NaN
+..              ...           ...  ...                   ...           ...
+66  Government Bond  GB00BN65R313  ...   2584651954722716971  GB00BN65R313
+67  Government Bond  CA135087K940  ...   2584651954722716971  CA135087K940
+68  Government Bond  US912828Z377  ...   2584651954722716971  US912828Z377
+69  Government Bond  CND100047QT4  ...   2584651954722716971  CND100047QT4
+70             CASH       USDCURR  ...   2584651954722716971           NaN
+
+[10309 rows x 12 columns], '/opt/***/data/output/landing_file_1718939564383777000.csv')
+[2024-06-21T03:13:51.562+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-21T03:13:51.718+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=gic_main_dag, task_id=transform, run_id=manual__2024-06-21T03:13:21+00:00, execution_date=20240621T031321, start_date=20240621T031350, end_date=20240621T031351
+[2024-06-21T03:13:51.764+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-21T03:13:51.795+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-21T03:13:51.798+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

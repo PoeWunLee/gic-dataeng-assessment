@@ -1,0 +1,131 @@
+filename,full_path_filename,extracted_filename_fund_name,extracted_filename_date,date,load_datetime_utc,hash_uid
+Applebead.28-02-2023 breakdown.csv,/opt/airflow/data/external-funds/external-funds/Applebead.28-02-2023 breakdown.csv,Applebead,28-02-2023,2023-02-28,2024-06-21 07:52:21.256132+00:00,11419240054371783369
+Applebead.30-04-2023 breakdown.csv,/opt/airflow/data/external-funds/external-funds/Applebead.30-04-2023 breakdown.csv,Applebead,30-04-2023,2023-04-30,2024-06-21 07:52:21.256132+00:00,3011223028007827377
+Applebead.30-06-2023 breakdown.csv,/opt/airflow/data/external-funds/external-funds/Applebead.30-06-2023 breakdown.csv,Applebead,30-06-2023,2023-06-30,2024-06-21 07:52:21.256132+00:00,16213117660708233687
+Applebead.30-09-2022 breakdown.csv,/opt/airflow/data/external-funds/external-funds/Applebead.30-09-2022 breakdown.csv,Applebead,30-09-2022,2022-09-30,2024-06-21 07:52:21.256132+00:00,1205996630034832610
+Applebead.30-11-2022 breakdown.csv,/opt/airflow/data/external-funds/external-funds/Applebead.30-11-2022 breakdown.csv,Applebead,30-11-2022,2022-11-30,2024-06-21 07:52:21.256132+00:00,3836966297399830158
+Applebead.31-01-2023 breakdown.csv,/opt/airflow/data/external-funds/external-funds/Applebead.31-01-2023 breakdown.csv,Applebead,31-01-2023,2023-01-31,2024-06-21 07:52:21.256132+00:00,5662120546987975761
+Applebead.31-03-2023 breakdown.csv,/opt/airflow/data/external-funds/external-funds/Applebead.31-03-2023 breakdown.csv,Applebead,31-03-2023,2023-03-31,2024-06-21 07:52:21.256132+00:00,5684862121070477233
+Applebead.31-05-2023 breakdown.csv,/opt/airflow/data/external-funds/external-funds/Applebead.31-05-2023 breakdown.csv,Applebead,31-05-2023,2023-05-31,2024-06-21 07:52:21.256132+00:00,6945823191930832625
+Applebead.31-07-2023 breakdown.csv,/opt/airflow/data/external-funds/external-funds/Applebead.31-07-2023 breakdown.csv,Applebead,31-07-2023,2023-07-31,2024-06-21 07:52:21.256132+00:00,2877192794529571145
+Applebead.31-08-2022 breakdown.csv,/opt/airflow/data/external-funds/external-funds/Applebead.31-08-2022 breakdown.csv,Applebead,31-08-2022,2022-08-31,2024-06-21 07:52:21.256132+00:00,10243761840529075426
+Applebead.31-08-2023 breakdown.csv,/opt/airflow/data/external-funds/external-funds/Applebead.31-08-2023 breakdown.csv,Applebead,31-08-2023,2023-08-31,2024-06-21 07:52:21.256132+00:00,15875202443356276345
+Applebead.31-10-2022 breakdown.csv,/opt/airflow/data/external-funds/external-funds/Applebead.31-10-2022 breakdown.csv,Applebead,31-10-2022,2022-10-31,2024-06-21 07:52:21.256132+00:00,10834912820082033211
+Applebead.31-12-2022 breakdown.csv,/opt/airflow/data/external-funds/external-funds/Applebead.31-12-2022 breakdown.csv,Applebead,31-12-2022,2022-12-31,2024-06-21 07:52:21.256132+00:00,11235854897716102280
+Belaware.28_02_2023.csv,/opt/airflow/data/external-funds/external-funds/Belaware.28_02_2023.csv,Belaware,28-02-2023,2023-02-28,2024-06-21 07:52:21.256132+00:00,14479454589348729504
+Belaware.30_04_2023.csv,/opt/airflow/data/external-funds/external-funds/Belaware.30_04_2023.csv,Belaware,30-04-2023,2023-04-30,2024-06-21 07:52:21.256132+00:00,10971090836846236617
+Belaware.30_06_2023.csv,/opt/airflow/data/external-funds/external-funds/Belaware.30_06_2023.csv,Belaware,30-06-2023,2023-06-30,2024-06-21 07:52:21.256132+00:00,12899684898530230501
+Belaware.30_09_2022.csv,/opt/airflow/data/external-funds/external-funds/Belaware.30_09_2022.csv,Belaware,30-09-2022,2022-09-30,2024-06-21 07:52:21.256132+00:00,10281006107464152543
+Belaware.30_11_2022.csv,/opt/airflow/data/external-funds/external-funds/Belaware.30_11_2022.csv,Belaware,30-11-2022,2022-11-30,2024-06-21 07:52:21.256132+00:00,4498744594067262937
+Belaware.31_01_2023.csv,/opt/airflow/data/external-funds/external-funds/Belaware.31_01_2023.csv,Belaware,31-01-2023,2023-01-31,2024-06-21 07:52:21.256132+00:00,18070149728345479998
+Belaware.31_03_2023.csv,/opt/airflow/data/external-funds/external-funds/Belaware.31_03_2023.csv,Belaware,31-03-2023,2023-03-31,2024-06-21 07:52:21.256132+00:00,6923265388325617583
+Belaware.31_05_2023.csv,/opt/airflow/data/external-funds/external-funds/Belaware.31_05_2023.csv,Belaware,31-05-2023,2023-05-31,2024-06-21 07:52:21.256132+00:00,5720302281797824816
+Belaware.31_07_2023.csv,/opt/airflow/data/external-funds/external-funds/Belaware.31_07_2023.csv,Belaware,31-07-2023,2023-07-31,2024-06-21 07:52:21.256132+00:00,476106113736544510
+Belaware.31_08_2022.csv,/opt/airflow/data/external-funds/external-funds/Belaware.31_08_2022.csv,Belaware,31-08-2022,2022-08-31,2024-06-21 07:52:21.256132+00:00,8814396402895361137
+Belaware.31_08_2023.csv,/opt/airflow/data/external-funds/external-funds/Belaware.31_08_2023.csv,Belaware,31-08-2023,2023-08-31,2024-06-21 07:52:21.256132+00:00,6233764008611242575
+Belaware.31_10_2022.csv,/opt/airflow/data/external-funds/external-funds/Belaware.31_10_2022.csv,Belaware,31-10-2022,2022-10-31,2024-06-21 07:52:21.256132+00:00,12589095642940857395
+Belaware.31_12_2022.csv,/opt/airflow/data/external-funds/external-funds/Belaware.31_12_2022.csv,Belaware,31-12-2022,2022-12-31,2024-06-21 07:52:21.256132+00:00,17944507051285313245
+Fund Whitestone.28-02-2023 - details.csv,/opt/airflow/data/external-funds/external-funds/Fund Whitestone.28-02-2023 - details.csv,Whitestone,28-02-2023,2023-02-28,2024-06-21 07:52:21.256132+00:00,549842280758287243
+Fund Whitestone.30-04-2023 - details.csv,/opt/airflow/data/external-funds/external-funds/Fund Whitestone.30-04-2023 - details.csv,Whitestone,30-04-2023,2023-04-30,2024-06-21 07:52:21.256132+00:00,3363378345384815251
+Fund Whitestone.30-06-2023 - details.csv,/opt/airflow/data/external-funds/external-funds/Fund Whitestone.30-06-2023 - details.csv,Whitestone,30-06-2023,2023-06-30,2024-06-21 07:52:21.256132+00:00,4889902047343180170
+Fund Whitestone.30-09-2022 - details.csv,/opt/airflow/data/external-funds/external-funds/Fund Whitestone.30-09-2022 - details.csv,Whitestone,30-09-2022,2022-09-30,2024-06-21 07:52:21.256132+00:00,581255302857341760
+Fund Whitestone.30-11-2022 - details.csv,/opt/airflow/data/external-funds/external-funds/Fund Whitestone.30-11-2022 - details.csv,Whitestone,30-11-2022,2022-11-30,2024-06-21 07:52:21.256132+00:00,14842107892699774535
+Fund Whitestone.31-01-2023 - details.csv,/opt/airflow/data/external-funds/external-funds/Fund Whitestone.31-01-2023 - details.csv,Whitestone,31-01-2023,2023-01-31,2024-06-21 07:52:21.256132+00:00,6155428056154031130
+Fund Whitestone.31-03-2023 - details.csv,/opt/airflow/data/external-funds/external-funds/Fund Whitestone.31-03-2023 - details.csv,Whitestone,31-03-2023,2023-03-31,2024-06-21 07:52:21.256132+00:00,15374551805060496895
+Fund Whitestone.31-05-2023 - details.csv,/opt/airflow/data/external-funds/external-funds/Fund Whitestone.31-05-2023 - details.csv,Whitestone,31-05-2023,2023-05-31,2024-06-21 07:52:21.256132+00:00,3242376902839169457
+Fund Whitestone.31-07-2023 - details.csv,/opt/airflow/data/external-funds/external-funds/Fund Whitestone.31-07-2023 - details.csv,Whitestone,31-07-2023,2023-07-31,2024-06-21 07:52:21.256132+00:00,8518202225900640171
+Fund Whitestone.31-08-2022 - details.csv,/opt/airflow/data/external-funds/external-funds/Fund Whitestone.31-08-2022 - details.csv,Whitestone,31-08-2022,2022-08-31,2024-06-21 07:52:21.256132+00:00,11709063517857464153
+Fund Whitestone.31-08-2023 - details.csv,/opt/airflow/data/external-funds/external-funds/Fund Whitestone.31-08-2023 - details.csv,Whitestone,31-08-2023,2023-08-31,2024-06-21 07:52:21.256132+00:00,6309256793125609196
+Fund Whitestone.31-10-2022 - details.csv,/opt/airflow/data/external-funds/external-funds/Fund Whitestone.31-10-2022 - details.csv,Whitestone,31-10-2022,2022-10-31,2024-06-21 07:52:21.256132+00:00,4642567213680609401
+Fund Whitestone.31-12-2022 - details.csv,/opt/airflow/data/external-funds/external-funds/Fund Whitestone.31-12-2022 - details.csv,Whitestone,31-12-2022,2022-12-31,2024-06-21 07:52:21.256132+00:00,12674114094393004408
+Leeder.01_31_2023.csv,/opt/airflow/data/external-funds/external-funds/Leeder.01_31_2023.csv,Leeder,01-31-2023,2023-01-31,2024-06-21 07:52:21.256132+00:00,2485307536236803246
+Leeder.02_28_2023.csv,/opt/airflow/data/external-funds/external-funds/Leeder.02_28_2023.csv,Leeder,02-28-2023,2023-02-28,2024-06-21 07:52:21.256132+00:00,6292493474308900321
+Leeder.03_31_2023.csv,/opt/airflow/data/external-funds/external-funds/Leeder.03_31_2023.csv,Leeder,03-31-2023,2023-03-31,2024-06-21 07:52:21.256132+00:00,14931299390470214035
+Leeder.04_30_2023.csv,/opt/airflow/data/external-funds/external-funds/Leeder.04_30_2023.csv,Leeder,04-30-2023,2023-04-30,2024-06-21 07:52:21.256132+00:00,726961943131204962
+Leeder.05_31_2023.csv,/opt/airflow/data/external-funds/external-funds/Leeder.05_31_2023.csv,Leeder,05-31-2023,2023-05-31,2024-06-21 07:52:21.256132+00:00,9947317167533521315
+Leeder.06_30_2023.csv,/opt/airflow/data/external-funds/external-funds/Leeder.06_30_2023.csv,Leeder,06-30-2023,2023-06-30,2024-06-21 07:52:21.256132+00:00,5965900707981318346
+Leeder.07_31_2023.csv,/opt/airflow/data/external-funds/external-funds/Leeder.07_31_2023.csv,Leeder,07-31-2023,2023-07-31,2024-06-21 07:52:21.256132+00:00,8469102651892463806
+Leeder.08_31_2022.csv,/opt/airflow/data/external-funds/external-funds/Leeder.08_31_2022.csv,Leeder,08-31-2022,2022-08-31,2024-06-21 07:52:21.256132+00:00,11795037143092190462
+Leeder.08_31_2023.csv,/opt/airflow/data/external-funds/external-funds/Leeder.08_31_2023.csv,Leeder,08-31-2023,2023-08-31,2024-06-21 07:52:21.256132+00:00,13649723557568884361
+Leeder.09_30_2022.csv,/opt/airflow/data/external-funds/external-funds/Leeder.09_30_2022.csv,Leeder,09-30-2022,2022-09-30,2024-06-21 07:52:21.256132+00:00,9538517385287474429
+Leeder.10_31_2022.csv,/opt/airflow/data/external-funds/external-funds/Leeder.10_31_2022.csv,Leeder,10-31-2022,2022-10-31,2024-06-21 07:52:21.256132+00:00,16474834737358245436
+Leeder.11_30_2022.csv,/opt/airflow/data/external-funds/external-funds/Leeder.11_30_2022.csv,Leeder,11-30-2022,2022-11-30,2024-06-21 07:52:21.256132+00:00,17973263896042733234
+Leeder.12_31_2022.csv,/opt/airflow/data/external-funds/external-funds/Leeder.12_31_2022.csv,Leeder,12-31-2022,2022-12-31,2024-06-21 07:52:21.256132+00:00,8903335274550938329
+Magnum.28-02-2023.csv,/opt/airflow/data/external-funds/external-funds/Magnum.28-02-2023.csv,Magnum,28-02-2023,2023-02-28,2024-06-21 07:52:21.256132+00:00,17577501765137771653
+Magnum.30-04-2023.csv,/opt/airflow/data/external-funds/external-funds/Magnum.30-04-2023.csv,Magnum,30-04-2023,2023-04-30,2024-06-21 07:52:21.256132+00:00,10807308389878237213
+Magnum.30-06-2023.csv,/opt/airflow/data/external-funds/external-funds/Magnum.30-06-2023.csv,Magnum,30-06-2023,2023-06-30,2024-06-21 07:52:21.256132+00:00,17694670894449438423
+Magnum.30-09-2022.csv,/opt/airflow/data/external-funds/external-funds/Magnum.30-09-2022.csv,Magnum,30-09-2022,2022-09-30,2024-06-21 07:52:21.256132+00:00,15913751298950313185
+Magnum.30-11-2022.csv,/opt/airflow/data/external-funds/external-funds/Magnum.30-11-2022.csv,Magnum,30-11-2022,2022-11-30,2024-06-21 07:52:21.256132+00:00,6697034662451225621
+Magnum.31-01-2023.csv,/opt/airflow/data/external-funds/external-funds/Magnum.31-01-2023.csv,Magnum,31-01-2023,2023-01-31,2024-06-21 07:52:21.256132+00:00,14727928815354101973
+Magnum.31-03-2023.csv,/opt/airflow/data/external-funds/external-funds/Magnum.31-03-2023.csv,Magnum,31-03-2023,2023-03-31,2024-06-21 07:52:21.256132+00:00,15596911932366193970
+Magnum.31-05-2023.csv,/opt/airflow/data/external-funds/external-funds/Magnum.31-05-2023.csv,Magnum,31-05-2023,2023-05-31,2024-06-21 07:52:21.256132+00:00,18364098477668098304
+Magnum.31-07-2023.csv,/opt/airflow/data/external-funds/external-funds/Magnum.31-07-2023.csv,Magnum,31-07-2023,2023-07-31,2024-06-21 07:52:21.256132+00:00,5482360003923748379
+Magnum.31-08-2022.csv,/opt/airflow/data/external-funds/external-funds/Magnum.31-08-2022.csv,Magnum,31-08-2022,2022-08-31,2024-06-21 07:52:21.256132+00:00,2349430255079069643
+Magnum.31-08-2023.csv,/opt/airflow/data/external-funds/external-funds/Magnum.31-08-2023.csv,Magnum,31-08-2023,2023-08-31,2024-06-21 07:52:21.256132+00:00,3672911411282266448
+Magnum.31-10-2022.csv,/opt/airflow/data/external-funds/external-funds/Magnum.31-10-2022.csv,Magnum,31-10-2022,2022-10-31,2024-06-21 07:52:21.256132+00:00,12488145411988526213
+Magnum.31-12-2022.csv,/opt/airflow/data/external-funds/external-funds/Magnum.31-12-2022.csv,Magnum,31-12-2022,2022-12-31,2024-06-21 07:52:21.256132+00:00,15587545001017705837
+mend-report Wallington.28_02_2023.csv,/opt/airflow/data/external-funds/external-funds/mend-report Wallington.28_02_2023.csv,Wallington,28-02-2023,2023-02-28,2024-06-21 07:52:21.256132+00:00,10365359819767654429
+mend-report Wallington.30_04_2023.csv,/opt/airflow/data/external-funds/external-funds/mend-report Wallington.30_04_2023.csv,Wallington,30-04-2023,2023-04-30,2024-06-21 07:52:21.256132+00:00,712555363567248017
+mend-report Wallington.30_06_2023.csv,/opt/airflow/data/external-funds/external-funds/mend-report Wallington.30_06_2023.csv,Wallington,30-06-2023,2023-06-30,2024-06-21 07:52:21.256132+00:00,8551188442523917266
+mend-report Wallington.30_09_2022.csv,/opt/airflow/data/external-funds/external-funds/mend-report Wallington.30_09_2022.csv,Wallington,30-09-2022,2022-09-30,2024-06-21 07:52:21.256132+00:00,15773757693605122513
+mend-report Wallington.30_11_2022.csv,/opt/airflow/data/external-funds/external-funds/mend-report Wallington.30_11_2022.csv,Wallington,30-11-2022,2022-11-30,2024-06-21 07:52:21.256132+00:00,11592014951114072295
+mend-report Wallington.31_01_2023.csv,/opt/airflow/data/external-funds/external-funds/mend-report Wallington.31_01_2023.csv,Wallington,31-01-2023,2023-01-31,2024-06-21 07:52:21.256132+00:00,16251377312272813027
+mend-report Wallington.31_03_2023.csv,/opt/airflow/data/external-funds/external-funds/mend-report Wallington.31_03_2023.csv,Wallington,31-03-2023,2023-03-31,2024-06-21 07:52:21.256132+00:00,5232824485976816419
+mend-report Wallington.31_05_2023.csv,/opt/airflow/data/external-funds/external-funds/mend-report Wallington.31_05_2023.csv,Wallington,31-05-2023,2023-05-31,2024-06-21 07:52:21.256132+00:00,14530540493661305106
+mend-report Wallington.31_07_2023.csv,/opt/airflow/data/external-funds/external-funds/mend-report Wallington.31_07_2023.csv,Wallington,31-07-2023,2023-07-31,2024-06-21 07:52:21.256132+00:00,17189756298417687051
+mend-report Wallington.31_08_2022.csv,/opt/airflow/data/external-funds/external-funds/mend-report Wallington.31_08_2022.csv,Wallington,31-08-2022,2022-08-31,2024-06-21 07:52:21.256132+00:00,7892458231965733804
+mend-report Wallington.31_08_2023.csv,/opt/airflow/data/external-funds/external-funds/mend-report Wallington.31_08_2023.csv,Wallington,31-08-2023,2023-08-31,2024-06-21 07:52:21.256132+00:00,10516206653423381425
+mend-report Wallington.31_10_2022.csv,/opt/airflow/data/external-funds/external-funds/mend-report Wallington.31_10_2022.csv,Wallington,31-10-2022,2022-10-31,2024-06-21 07:52:21.256132+00:00,11740227142136224198
+mend-report Wallington.31_12_2022.csv,/opt/airflow/data/external-funds/external-funds/mend-report Wallington.31_12_2022.csv,Wallington,31-12-2022,2022-12-31,2024-06-21 07:52:21.256132+00:00,9286934413176438038
+Report-of-Gohen.01-31-2023.csv,/opt/airflow/data/external-funds/external-funds/Report-of-Gohen.01-31-2023.csv,Gohen,01-31-2023,2023-01-31,2024-06-21 07:52:21.256132+00:00,17310865341114934309
+Report-of-Gohen.02-28-2023.csv,/opt/airflow/data/external-funds/external-funds/Report-of-Gohen.02-28-2023.csv,Gohen,02-28-2023,2023-02-28,2024-06-21 07:52:21.256132+00:00,7180929983531507198
+Report-of-Gohen.03-31-2023.csv,/opt/airflow/data/external-funds/external-funds/Report-of-Gohen.03-31-2023.csv,Gohen,03-31-2023,2023-03-31,2024-06-21 07:52:21.256132+00:00,10418707489261316059
+Report-of-Gohen.04-30-2023.csv,/opt/airflow/data/external-funds/external-funds/Report-of-Gohen.04-30-2023.csv,Gohen,04-30-2023,2023-04-30,2024-06-21 07:52:21.256132+00:00,15314149750143224232
+Report-of-Gohen.05-31-2023.csv,/opt/airflow/data/external-funds/external-funds/Report-of-Gohen.05-31-2023.csv,Gohen,05-31-2023,2023-05-31,2024-06-21 07:52:21.256132+00:00,7838805027278902724
+Report-of-Gohen.06-30-2023.csv,/opt/airflow/data/external-funds/external-funds/Report-of-Gohen.06-30-2023.csv,Gohen,06-30-2023,2023-06-30,2024-06-21 07:52:21.256132+00:00,16119414770940811793
+Report-of-Gohen.07-31-2023.csv,/opt/airflow/data/external-funds/external-funds/Report-of-Gohen.07-31-2023.csv,Gohen,07-31-2023,2023-07-31,2024-06-21 07:52:21.256132+00:00,661361997458808419
+Report-of-Gohen.08-31-2022.csv,/opt/airflow/data/external-funds/external-funds/Report-of-Gohen.08-31-2022.csv,Gohen,08-31-2022,2022-08-31,2024-06-21 07:52:21.256132+00:00,4590984965930968520
+Report-of-Gohen.08-31-2023.csv,/opt/airflow/data/external-funds/external-funds/Report-of-Gohen.08-31-2023.csv,Gohen,08-31-2023,2023-08-31,2024-06-21 07:52:21.256132+00:00,9450861791683185342
+Report-of-Gohen.09-30-2022.csv,/opt/airflow/data/external-funds/external-funds/Report-of-Gohen.09-30-2022.csv,Gohen,09-30-2022,2022-09-30,2024-06-21 07:52:21.256132+00:00,11367546135216379249
+Report-of-Gohen.10-31-2022.csv,/opt/airflow/data/external-funds/external-funds/Report-of-Gohen.10-31-2022.csv,Gohen,10-31-2022,2022-10-31,2024-06-21 07:52:21.256132+00:00,16775824883197640194
+Report-of-Gohen.11-30-2022.csv,/opt/airflow/data/external-funds/external-funds/Report-of-Gohen.11-30-2022.csv,Gohen,11-30-2022,2022-11-30,2024-06-21 07:52:21.256132+00:00,2102398020821852448
+Report-of-Gohen.12-31-2022.csv,/opt/airflow/data/external-funds/external-funds/Report-of-Gohen.12-31-2022.csv,Gohen,12-31-2022,2022-12-31,2024-06-21 07:52:21.256132+00:00,17304655446461241032
+rpt-Catalysm.2022-08-31.csv,/opt/airflow/data/external-funds/external-funds/rpt-Catalysm.2022-08-31.csv,Catalysm,2022-08-31,2022-08-31,2024-06-21 07:52:21.256132+00:00,7766826901392989301
+rpt-Catalysm.2022-09-30.csv,/opt/airflow/data/external-funds/external-funds/rpt-Catalysm.2022-09-30.csv,Catalysm,2022-09-30,2022-09-30,2024-06-21 07:52:21.256132+00:00,803738745474336478
+rpt-Catalysm.2022-10-31.csv,/opt/airflow/data/external-funds/external-funds/rpt-Catalysm.2022-10-31.csv,Catalysm,2022-10-31,2022-10-31,2024-06-21 07:52:21.256132+00:00,12246353635511225457
+rpt-Catalysm.2022-11-30.csv,/opt/airflow/data/external-funds/external-funds/rpt-Catalysm.2022-11-30.csv,Catalysm,2022-11-30,2022-11-30,2024-06-21 07:52:21.256132+00:00,1977140378754441029
+rpt-Catalysm.2022-12-31.csv,/opt/airflow/data/external-funds/external-funds/rpt-Catalysm.2022-12-31.csv,Catalysm,2022-12-31,2022-12-31,2024-06-21 07:52:21.256132+00:00,6001114841008370156
+rpt-Catalysm.2023-01-31.csv,/opt/airflow/data/external-funds/external-funds/rpt-Catalysm.2023-01-31.csv,Catalysm,2023-01-31,2023-01-31,2024-06-21 07:52:21.256132+00:00,16670967330865445605
+rpt-Catalysm.2023-02-28.csv,/opt/airflow/data/external-funds/external-funds/rpt-Catalysm.2023-02-28.csv,Catalysm,2023-02-28,2023-02-28,2024-06-21 07:52:21.256132+00:00,8801456365586362036
+rpt-Catalysm.2023-03-31.csv,/opt/airflow/data/external-funds/external-funds/rpt-Catalysm.2023-03-31.csv,Catalysm,2023-03-31,2023-03-31,2024-06-21 07:52:21.256132+00:00,15394361606181775788
+rpt-Catalysm.2023-04-30.csv,/opt/airflow/data/external-funds/external-funds/rpt-Catalysm.2023-04-30.csv,Catalysm,2023-04-30,2023-04-30,2024-06-21 07:52:21.256132+00:00,15751184752132226689
+rpt-Catalysm.2023-05-31.csv,/opt/airflow/data/external-funds/external-funds/rpt-Catalysm.2023-05-31.csv,Catalysm,2023-05-31,2023-05-31,2024-06-21 07:52:21.256132+00:00,8824815819054358644
+rpt-Catalysm.2023-06-30.csv,/opt/airflow/data/external-funds/external-funds/rpt-Catalysm.2023-06-30.csv,Catalysm,2023-06-30,2023-06-30,2024-06-21 07:52:21.256132+00:00,4425690974233538464
+rpt-Catalysm.2023-07-31.csv,/opt/airflow/data/external-funds/external-funds/rpt-Catalysm.2023-07-31.csv,Catalysm,2023-07-31,2023-07-31,2024-06-21 07:52:21.256132+00:00,7744612817585980312
+rpt-Catalysm.2023-08-31.csv,/opt/airflow/data/external-funds/external-funds/rpt-Catalysm.2023-08-31.csv,Catalysm,2023-08-31,2023-08-31,2024-06-21 07:52:21.256132+00:00,1012981363524336201
+TT_monthly_Trustmind.20220831.csv,/opt/airflow/data/external-funds/external-funds/TT_monthly_Trustmind.20220831.csv,Trustmind,20220831,2022-08-31,2024-06-21 07:52:21.256132+00:00,13572714601057832024
+TT_monthly_Trustmind.20220930.csv,/opt/airflow/data/external-funds/external-funds/TT_monthly_Trustmind.20220930.csv,Trustmind,20220930,2022-09-30,2024-06-21 07:52:21.256132+00:00,2635228818709044040
+TT_monthly_Trustmind.20221031.csv,/opt/airflow/data/external-funds/external-funds/TT_monthly_Trustmind.20221031.csv,Trustmind,20221031,2022-10-31,2024-06-21 07:52:21.256132+00:00,3120943573632334817
+TT_monthly_Trustmind.20221130.csv,/opt/airflow/data/external-funds/external-funds/TT_monthly_Trustmind.20221130.csv,Trustmind,20221130,2022-11-30,2024-06-21 07:52:21.256132+00:00,13726091982008643035
+TT_monthly_Trustmind.20221231.csv,/opt/airflow/data/external-funds/external-funds/TT_monthly_Trustmind.20221231.csv,Trustmind,20221231,2022-12-31,2024-06-21 07:52:21.256132+00:00,13356143424811809852
+TT_monthly_Trustmind.20230131.csv,/opt/airflow/data/external-funds/external-funds/TT_monthly_Trustmind.20230131.csv,Trustmind,20230131,2023-01-31,2024-06-21 07:52:21.256132+00:00,2382893843520489631
+TT_monthly_Trustmind.20230228.csv,/opt/airflow/data/external-funds/external-funds/TT_monthly_Trustmind.20230228.csv,Trustmind,20230228,2023-02-28,2024-06-21 07:52:21.256132+00:00,12449379795764988682
+TT_monthly_Trustmind.20230331.csv,/opt/airflow/data/external-funds/external-funds/TT_monthly_Trustmind.20230331.csv,Trustmind,20230331,2023-03-31,2024-06-21 07:52:21.256132+00:00,4192192461424514030
+TT_monthly_Trustmind.20230430.csv,/opt/airflow/data/external-funds/external-funds/TT_monthly_Trustmind.20230430.csv,Trustmind,20230430,2023-04-30,2024-06-21 07:52:21.256132+00:00,6168781817838042318
+TT_monthly_Trustmind.20230531.csv,/opt/airflow/data/external-funds/external-funds/TT_monthly_Trustmind.20230531.csv,Trustmind,20230531,2023-05-31,2024-06-21 07:52:21.256132+00:00,3696612278270375348
+TT_monthly_Trustmind.20230630.csv,/opt/airflow/data/external-funds/external-funds/TT_monthly_Trustmind.20230630.csv,Trustmind,20230630,2023-06-30,2024-06-21 07:52:21.256132+00:00,1290500091963565430
+TT_monthly_Trustmind.20230731.csv,/opt/airflow/data/external-funds/external-funds/TT_monthly_Trustmind.20230731.csv,Trustmind,20230731,2023-07-31,2024-06-21 07:52:21.256132+00:00,5118452306127174718
+TT_monthly_Trustmind.20230831.csv,/opt/airflow/data/external-funds/external-funds/TT_monthly_Trustmind.20230831.csv,Trustmind,20230831,2023-08-31,2024-06-21 07:52:21.256132+00:00,15912452249361321460
+Virtous.01-31-2023 - securities.csv,/opt/airflow/data/external-funds/external-funds/Virtous.01-31-2023 - securities.csv,Virtous,01-31-2023,2023-01-31,2024-06-21 07:52:21.256132+00:00,16375273272412404072
+Virtous.02-28-2023 - securities.csv,/opt/airflow/data/external-funds/external-funds/Virtous.02-28-2023 - securities.csv,Virtous,02-28-2023,2023-02-28,2024-06-21 07:52:21.256132+00:00,2120410796294564932
+Virtous.03-31-2023 - securities.csv,/opt/airflow/data/external-funds/external-funds/Virtous.03-31-2023 - securities.csv,Virtous,03-31-2023,2023-03-31,2024-06-21 07:52:21.256132+00:00,14831570323130435074
+Virtous.04-30-2023 - securities.csv,/opt/airflow/data/external-funds/external-funds/Virtous.04-30-2023 - securities.csv,Virtous,04-30-2023,2023-04-30,2024-06-21 07:52:21.256132+00:00,2773891262668277477
+Virtous.05-31-2023 - securities.csv,/opt/airflow/data/external-funds/external-funds/Virtous.05-31-2023 - securities.csv,Virtous,05-31-2023,2023-05-31,2024-06-21 07:52:21.256132+00:00,17666703910220331935
+Virtous.06-30-2023 - securities.csv,/opt/airflow/data/external-funds/external-funds/Virtous.06-30-2023 - securities.csv,Virtous,06-30-2023,2023-06-30,2024-06-21 07:52:21.256132+00:00,4111658539692476528
+Virtous.07-31-2023 - securities.csv,/opt/airflow/data/external-funds/external-funds/Virtous.07-31-2023 - securities.csv,Virtous,07-31-2023,2023-07-31,2024-06-21 07:52:21.256132+00:00,5382891854439750535
+Virtous.08-31-2022 - securities.csv,/opt/airflow/data/external-funds/external-funds/Virtous.08-31-2022 - securities.csv,Virtous,08-31-2022,2022-08-31,2024-06-21 07:52:21.256132+00:00,15272117910758970769
+Virtous.08-31-2023 - securities.csv,/opt/airflow/data/external-funds/external-funds/Virtous.08-31-2023 - securities.csv,Virtous,08-31-2023,2023-08-31,2024-06-21 07:52:21.256132+00:00,2645022706614606613
+Virtous.09-30-2022 - securities.csv,/opt/airflow/data/external-funds/external-funds/Virtous.09-30-2022 - securities.csv,Virtous,09-30-2022,2022-09-30,2024-06-21 07:52:21.256132+00:00,16464275884712832044
+Virtous.10-31-2022 - securities.csv,/opt/airflow/data/external-funds/external-funds/Virtous.10-31-2022 - securities.csv,Virtous,10-31-2022,2022-10-31,2024-06-21 07:52:21.256132+00:00,12399299229758095931
+Virtous.11-30-2022 - securities.csv,/opt/airflow/data/external-funds/external-funds/Virtous.11-30-2022 - securities.csv,Virtous,11-30-2022,2022-11-30,2024-06-21 07:52:21.256132+00:00,4692515656309670038
+Virtous.12-31-2022 - securities.csv,/opt/airflow/data/external-funds/external-funds/Virtous.12-31-2022 - securities.csv,Virtous,12-31-2022,2022-12-31,2024-06-21 07:52:21.256132+00:00,10822411676700087075

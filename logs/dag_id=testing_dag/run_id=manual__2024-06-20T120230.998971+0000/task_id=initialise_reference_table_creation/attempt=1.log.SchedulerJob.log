@@ -1,0 +1,1 @@
+[2024-06-20T12:03:16.898+0000] {scheduler_job_runner.py:769} ERROR - Executor reports task instance <TaskInstance: testing_dag.initialise_reference_table_creation manual__2024-06-20T12:02:30.998971+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

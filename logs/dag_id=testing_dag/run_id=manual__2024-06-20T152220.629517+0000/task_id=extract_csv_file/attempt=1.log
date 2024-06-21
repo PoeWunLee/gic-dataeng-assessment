@@ -1,0 +1,475 @@
+[2024-06-20T15:22:50.604+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-20T15:22:50.667+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: testing_dag.extract_csv_file manual__2024-06-20T15:22:20.629517+00:00 [queued]>
+[2024-06-20T15:22:50.686+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: testing_dag.extract_csv_file manual__2024-06-20T15:22:20.629517+00:00 [queued]>
+[2024-06-20T15:22:50.687+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-20T15:22:50.723+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): extract_csv_file> on 2024-06-20 15:22:20.629517+00:00
+[2024-06-20T15:22:50.758+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'testing_dag', 'extract_csv_file', 'manual__2024-06-20T15:22:20.629517+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmp6wfu91n_']
+[2024-06-20T15:22:50.758+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=638) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-20T15:22:50.760+0000] {standard_task_runner.py:91} INFO - Job 163: Subtask extract_csv_file
+[2024-06-20T15:22:50.761+0000] {standard_task_runner.py:63} INFO - Started process 648 to run task
+[2024-06-20T15:22:50.877+0000] {task_command.py:426} INFO - Running <TaskInstance: testing_dag.extract_csv_file manual__2024-06-20T15:22:20.629517+00:00 [running]> on host 39e4faefdcb7
+[2024-06-20T15:22:51.111+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='testing_dag' AIRFLOW_CTX_TASK_ID='extract_csv_file' AIRFLOW_CTX_EXECUTION_DATE='2024-06-20T15:22:20.629517+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-20T15:22:20.629517+00:00'
+[2024-06-20T15:22:51.117+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-20T15:22:51.287+0000] {logging_mixin.py:188} INFO - File No. 0. Initiating load for Applebead, extract date 28-02-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.28-02-2023 breakdown.csv
+[2024-06-20T15:22:51.301+0000] {logging_mixin.py:188} INFO - File No. 1. Initiating load for Applebead, extract date 30-04-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.30-04-2023 breakdown.csv
+[2024-06-20T15:22:51.308+0000] {logging_mixin.py:188} INFO - File No. 2. Initiating load for Applebead, extract date 30-06-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.30-06-2023 breakdown.csv
+[2024-06-20T15:22:51.318+0000] {logging_mixin.py:188} INFO - File No. 3. Initiating load for Applebead, extract date 30-09-2022 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.30-09-2022 breakdown.csv
+[2024-06-20T15:22:51.327+0000] {logging_mixin.py:188} INFO - File No. 4. Initiating load for Applebead, extract date 30-11-2022 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.30-11-2022 breakdown.csv
+[2024-06-20T15:22:51.336+0000] {logging_mixin.py:188} INFO - File No. 5. Initiating load for Applebead, extract date 31-01-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-01-2023 breakdown.csv
+[2024-06-20T15:22:51.343+0000] {logging_mixin.py:188} INFO - File No. 6. Initiating load for Applebead, extract date 31-03-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-03-2023 breakdown.csv
+[2024-06-20T15:22:51.353+0000] {logging_mixin.py:188} INFO - File No. 7. Initiating load for Applebead, extract date 31-05-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-05-2023 breakdown.csv
+[2024-06-20T15:22:51.361+0000] {logging_mixin.py:188} INFO - File No. 8. Initiating load for Applebead, extract date 31-07-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-07-2023 breakdown.csv
+[2024-06-20T15:22:51.370+0000] {logging_mixin.py:188} INFO - File No. 9. Initiating load for Applebead, extract date 31-08-2022 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-08-2022 breakdown.csv
+[2024-06-20T15:22:51.376+0000] {logging_mixin.py:188} INFO - File No. 10. Initiating load for Applebead, extract date 31-08-2023 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-08-2023 breakdown.csv
+[2024-06-20T15:22:51.383+0000] {logging_mixin.py:188} INFO - File No. 11. Initiating load for Applebead, extract date 31-10-2022 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-10-2022 breakdown.csv
+[2024-06-20T15:22:51.391+0000] {logging_mixin.py:188} INFO - File No. 12. Initiating load for Applebead, extract date 31-12-2022 /n Filename: /opt/***/data/external-funds/external-funds/Applebead.31-12-2022 breakdown.csv
+[2024-06-20T15:22:51.401+0000] {logging_mixin.py:188} INFO - File No. 13. Initiating load for Belaware, extract date 28-02-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.28_02_2023.csv
+[2024-06-20T15:22:51.409+0000] {logging_mixin.py:188} INFO - File No. 14. Initiating load for Belaware, extract date 30-04-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.30_04_2023.csv
+[2024-06-20T15:22:51.421+0000] {logging_mixin.py:188} INFO - File No. 15. Initiating load for Belaware, extract date 30-06-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.30_06_2023.csv
+[2024-06-20T15:22:51.431+0000] {logging_mixin.py:188} INFO - File No. 16. Initiating load for Belaware, extract date 30-09-2022 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.30_09_2022.csv
+[2024-06-20T15:22:51.444+0000] {logging_mixin.py:188} INFO - File No. 17. Initiating load for Belaware, extract date 30-11-2022 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.30_11_2022.csv
+[2024-06-20T15:22:51.461+0000] {logging_mixin.py:188} INFO - File No. 18. Initiating load for Belaware, extract date 31-01-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_01_2023.csv
+[2024-06-20T15:22:51.512+0000] {logging_mixin.py:188} INFO - File No. 19. Initiating load for Belaware, extract date 31-03-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_03_2023.csv
+[2024-06-20T15:22:51.533+0000] {logging_mixin.py:188} INFO - File No. 20. Initiating load for Belaware, extract date 31-05-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_05_2023.csv
+[2024-06-20T15:22:51.574+0000] {logging_mixin.py:188} INFO - File No. 21. Initiating load for Belaware, extract date 31-07-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_07_2023.csv
+[2024-06-20T15:22:51.601+0000] {logging_mixin.py:188} INFO - File No. 22. Initiating load for Belaware, extract date 31-08-2022 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_08_2022.csv
+[2024-06-20T15:22:51.620+0000] {logging_mixin.py:188} INFO - File No. 23. Initiating load for Belaware, extract date 31-08-2023 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_08_2023.csv
+[2024-06-20T15:22:51.633+0000] {logging_mixin.py:188} INFO - File No. 24. Initiating load for Belaware, extract date 31-10-2022 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_10_2022.csv
+[2024-06-20T15:22:51.642+0000] {logging_mixin.py:188} INFO - File No. 25. Initiating load for Belaware, extract date 31-12-2022 /n Filename: /opt/***/data/external-funds/external-funds/Belaware.31_12_2022.csv
+[2024-06-20T15:22:51.651+0000] {logging_mixin.py:188} INFO - File No. 26. Initiating load for Whitestone, extract date 28-02-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.28-02-2023 - details.csv
+[2024-06-20T15:22:51.658+0000] {logging_mixin.py:188} INFO - File No. 27. Initiating load for Whitestone, extract date 30-04-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.30-04-2023 - details.csv
+[2024-06-20T15:22:51.666+0000] {logging_mixin.py:188} INFO - File No. 28. Initiating load for Whitestone, extract date 30-06-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.30-06-2023 - details.csv
+[2024-06-20T15:22:51.673+0000] {logging_mixin.py:188} INFO - File No. 29. Initiating load for Whitestone, extract date 30-09-2022 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.30-09-2022 - details.csv
+[2024-06-20T15:22:51.680+0000] {logging_mixin.py:188} INFO - File No. 30. Initiating load for Whitestone, extract date 30-11-2022 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.30-11-2022 - details.csv
+[2024-06-20T15:22:51.689+0000] {logging_mixin.py:188} INFO - File No. 31. Initiating load for Whitestone, extract date 31-01-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-01-2023 - details.csv
+[2024-06-20T15:22:51.718+0000] {logging_mixin.py:188} INFO - File No. 32. Initiating load for Whitestone, extract date 31-03-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-03-2023 - details.csv
+[2024-06-20T15:22:51.727+0000] {logging_mixin.py:188} INFO - File No. 33. Initiating load for Whitestone, extract date 31-05-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-05-2023 - details.csv
+[2024-06-20T15:22:51.735+0000] {logging_mixin.py:188} INFO - File No. 34. Initiating load for Whitestone, extract date 31-07-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-07-2023 - details.csv
+[2024-06-20T15:22:51.745+0000] {logging_mixin.py:188} INFO - File No. 35. Initiating load for Whitestone, extract date 31-08-2022 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-08-2022 - details.csv
+[2024-06-20T15:22:51.755+0000] {logging_mixin.py:188} INFO - File No. 36. Initiating load for Whitestone, extract date 31-08-2023 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-08-2023 - details.csv
+[2024-06-20T15:22:51.768+0000] {logging_mixin.py:188} INFO - File No. 37. Initiating load for Whitestone, extract date 31-10-2022 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-10-2022 - details.csv
+[2024-06-20T15:22:51.779+0000] {logging_mixin.py:188} INFO - File No. 38. Initiating load for Whitestone, extract date 31-12-2022 /n Filename: /opt/***/data/external-funds/external-funds/Fund Whitestone.31-12-2022 - details.csv
+[2024-06-20T15:22:51.790+0000] {logging_mixin.py:188} INFO - File No. 39. Initiating load for Leeder, extract date 01-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.01_31_2023.csv
+[2024-06-20T15:22:51.802+0000] {logging_mixin.py:188} INFO - File No. 40. Initiating load for Leeder, extract date 02-28-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.02_28_2023.csv
+[2024-06-20T15:22:51.814+0000] {logging_mixin.py:188} INFO - File No. 41. Initiating load for Leeder, extract date 03-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.03_31_2023.csv
+[2024-06-20T15:22:51.823+0000] {logging_mixin.py:188} INFO - File No. 42. Initiating load for Leeder, extract date 04-30-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.04_30_2023.csv
+[2024-06-20T15:22:51.830+0000] {logging_mixin.py:188} INFO - File No. 43. Initiating load for Leeder, extract date 05-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.05_31_2023.csv
+[2024-06-20T15:22:51.838+0000] {logging_mixin.py:188} INFO - File No. 44. Initiating load for Leeder, extract date 06-30-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.06_30_2023.csv
+[2024-06-20T15:22:51.844+0000] {logging_mixin.py:188} INFO - File No. 45. Initiating load for Leeder, extract date 07-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.07_31_2023.csv
+[2024-06-20T15:22:51.851+0000] {logging_mixin.py:188} INFO - File No. 46. Initiating load for Leeder, extract date 08-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.08_31_2022.csv
+[2024-06-20T15:22:51.857+0000] {logging_mixin.py:188} INFO - File No. 47. Initiating load for Leeder, extract date 08-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.08_31_2023.csv
+[2024-06-20T15:22:51.865+0000] {logging_mixin.py:188} INFO - File No. 48. Initiating load for Leeder, extract date 09-30-2022 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.09_30_2022.csv
+[2024-06-20T15:22:51.873+0000] {logging_mixin.py:188} INFO - File No. 49. Initiating load for Leeder, extract date 10-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.10_31_2022.csv
+[2024-06-20T15:22:51.881+0000] {logging_mixin.py:188} INFO - File No. 50. Initiating load for Leeder, extract date 11-30-2022 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.11_30_2022.csv
+[2024-06-20T15:22:51.888+0000] {logging_mixin.py:188} INFO - File No. 51. Initiating load for Leeder, extract date 12-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Leeder.12_31_2022.csv
+[2024-06-20T15:22:51.894+0000] {logging_mixin.py:188} INFO - File No. 52. Initiating load for Magnum, extract date 28-02-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.28-02-2023.csv
+[2024-06-20T15:22:51.902+0000] {logging_mixin.py:188} INFO - File No. 53. Initiating load for Magnum, extract date 30-04-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.30-04-2023.csv
+[2024-06-20T15:22:51.907+0000] {logging_mixin.py:188} INFO - File No. 54. Initiating load for Magnum, extract date 30-06-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.30-06-2023.csv
+[2024-06-20T15:22:51.914+0000] {logging_mixin.py:188} INFO - File No. 55. Initiating load for Magnum, extract date 30-09-2022 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.30-09-2022.csv
+[2024-06-20T15:22:51.922+0000] {logging_mixin.py:188} INFO - File No. 56. Initiating load for Magnum, extract date 30-11-2022 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.30-11-2022.csv
+[2024-06-20T15:22:51.929+0000] {logging_mixin.py:188} INFO - File No. 57. Initiating load for Magnum, extract date 31-01-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-01-2023.csv
+[2024-06-20T15:22:51.939+0000] {logging_mixin.py:188} INFO - File No. 58. Initiating load for Magnum, extract date 31-03-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-03-2023.csv
+[2024-06-20T15:22:51.949+0000] {logging_mixin.py:188} INFO - File No. 59. Initiating load for Magnum, extract date 31-05-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-05-2023.csv
+[2024-06-20T15:22:51.961+0000] {logging_mixin.py:188} INFO - File No. 60. Initiating load for Magnum, extract date 31-07-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-07-2023.csv
+[2024-06-20T15:22:51.970+0000] {logging_mixin.py:188} INFO - File No. 61. Initiating load for Magnum, extract date 31-08-2022 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-08-2022.csv
+[2024-06-20T15:22:51.980+0000] {logging_mixin.py:188} INFO - File No. 62. Initiating load for Magnum, extract date 31-08-2023 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-08-2023.csv
+[2024-06-20T15:22:51.993+0000] {logging_mixin.py:188} INFO - File No. 63. Initiating load for Magnum, extract date 31-10-2022 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-10-2022.csv
+[2024-06-20T15:22:52.007+0000] {logging_mixin.py:188} INFO - File No. 64. Initiating load for Magnum, extract date 31-12-2022 /n Filename: /opt/***/data/external-funds/external-funds/Magnum.31-12-2022.csv
+[2024-06-20T15:22:52.019+0000] {logging_mixin.py:188} INFO - File No. 65. Initiating load for Wallington, extract date 28-02-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.28_02_2023.csv
+[2024-06-20T15:22:52.028+0000] {logging_mixin.py:188} INFO - File No. 66. Initiating load for Wallington, extract date 30-04-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.30_04_2023.csv
+[2024-06-20T15:22:52.041+0000] {logging_mixin.py:188} INFO - File No. 67. Initiating load for Wallington, extract date 30-06-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.30_06_2023.csv
+[2024-06-20T15:22:52.049+0000] {logging_mixin.py:188} INFO - File No. 68. Initiating load for Wallington, extract date 30-09-2022 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.30_09_2022.csv
+[2024-06-20T15:22:52.056+0000] {logging_mixin.py:188} INFO - File No. 69. Initiating load for Wallington, extract date 30-11-2022 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.30_11_2022.csv
+[2024-06-20T15:22:52.063+0000] {logging_mixin.py:188} INFO - File No. 70. Initiating load for Wallington, extract date 31-01-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_01_2023.csv
+[2024-06-20T15:22:52.071+0000] {logging_mixin.py:188} INFO - File No. 71. Initiating load for Wallington, extract date 31-03-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_03_2023.csv
+[2024-06-20T15:22:52.078+0000] {logging_mixin.py:188} INFO - File No. 72. Initiating load for Wallington, extract date 31-05-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_05_2023.csv
+[2024-06-20T15:22:52.086+0000] {logging_mixin.py:188} INFO - File No. 73. Initiating load for Wallington, extract date 31-07-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_07_2023.csv
+[2024-06-20T15:22:52.093+0000] {logging_mixin.py:188} INFO - File No. 74. Initiating load for Wallington, extract date 31-08-2022 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_08_2022.csv
+[2024-06-20T15:22:52.101+0000] {logging_mixin.py:188} INFO - File No. 75. Initiating load for Wallington, extract date 31-08-2023 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_08_2023.csv
+[2024-06-20T15:22:52.108+0000] {logging_mixin.py:188} INFO - File No. 76. Initiating load for Wallington, extract date 31-10-2022 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_10_2022.csv
+[2024-06-20T15:22:52.115+0000] {logging_mixin.py:188} INFO - File No. 77. Initiating load for Wallington, extract date 31-12-2022 /n Filename: /opt/***/data/external-funds/external-funds/mend-report Wallington.31_12_2022.csv
+[2024-06-20T15:22:52.122+0000] {logging_mixin.py:188} INFO - File No. 78. Initiating load for Gohen, extract date 01-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.01-31-2023.csv
+[2024-06-20T15:22:52.131+0000] {logging_mixin.py:188} INFO - File No. 79. Initiating load for Gohen, extract date 02-28-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.02-28-2023.csv
+[2024-06-20T15:22:52.140+0000] {logging_mixin.py:188} INFO - File No. 80. Initiating load for Gohen, extract date 03-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.03-31-2023.csv
+[2024-06-20T15:22:52.148+0000] {logging_mixin.py:188} INFO - File No. 81. Initiating load for Gohen, extract date 04-30-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.04-30-2023.csv
+[2024-06-20T15:22:52.155+0000] {logging_mixin.py:188} INFO - File No. 82. Initiating load for Gohen, extract date 05-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.05-31-2023.csv
+[2024-06-20T15:22:52.162+0000] {logging_mixin.py:188} INFO - File No. 83. Initiating load for Gohen, extract date 06-30-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.06-30-2023.csv
+[2024-06-20T15:22:52.173+0000] {logging_mixin.py:188} INFO - File No. 84. Initiating load for Gohen, extract date 07-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.07-31-2023.csv
+[2024-06-20T15:22:52.186+0000] {logging_mixin.py:188} INFO - File No. 85. Initiating load for Gohen, extract date 08-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.08-31-2022.csv
+[2024-06-20T15:22:52.204+0000] {logging_mixin.py:188} INFO - File No. 86. Initiating load for Gohen, extract date 08-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.08-31-2023.csv
+[2024-06-20T15:22:52.220+0000] {logging_mixin.py:188} INFO - File No. 87. Initiating load for Gohen, extract date 09-30-2022 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.09-30-2022.csv
+[2024-06-20T15:22:52.230+0000] {logging_mixin.py:188} INFO - File No. 88. Initiating load for Gohen, extract date 10-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.10-31-2022.csv
+[2024-06-20T15:22:52.243+0000] {logging_mixin.py:188} INFO - File No. 89. Initiating load for Gohen, extract date 11-30-2022 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.11-30-2022.csv
+[2024-06-20T15:22:52.252+0000] {logging_mixin.py:188} INFO - File No. 90. Initiating load for Gohen, extract date 12-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Report-of-Gohen.12-31-2022.csv
+[2024-06-20T15:22:52.258+0000] {logging_mixin.py:188} INFO - File No. 91. Initiating load for Catalysm, extract date 2022-08-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2022-08-31.csv
+[2024-06-20T15:22:52.267+0000] {logging_mixin.py:188} INFO - File No. 92. Initiating load for Catalysm, extract date 2022-09-30 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2022-09-30.csv
+[2024-06-20T15:22:52.275+0000] {logging_mixin.py:188} INFO - File No. 93. Initiating load for Catalysm, extract date 2022-10-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2022-10-31.csv
+[2024-06-20T15:22:52.285+0000] {logging_mixin.py:188} INFO - File No. 94. Initiating load for Catalysm, extract date 2022-11-30 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2022-11-30.csv
+[2024-06-20T15:22:52.293+0000] {logging_mixin.py:188} INFO - File No. 95. Initiating load for Catalysm, extract date 2022-12-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2022-12-31.csv
+[2024-06-20T15:22:52.300+0000] {logging_mixin.py:188} INFO - File No. 96. Initiating load for Catalysm, extract date 2023-01-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-01-31.csv
+[2024-06-20T15:22:52.307+0000] {logging_mixin.py:188} INFO - File No. 97. Initiating load for Catalysm, extract date 2023-02-28 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-02-28.csv
+[2024-06-20T15:22:52.314+0000] {logging_mixin.py:188} INFO - File No. 98. Initiating load for Catalysm, extract date 2023-03-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-03-31.csv
+[2024-06-20T15:22:52.320+0000] {logging_mixin.py:188} INFO - File No. 99. Initiating load for Catalysm, extract date 2023-04-30 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-04-30.csv
+[2024-06-20T15:22:52.327+0000] {logging_mixin.py:188} INFO - File No. 100. Initiating load for Catalysm, extract date 2023-05-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-05-31.csv
+[2024-06-20T15:22:52.334+0000] {logging_mixin.py:188} INFO - File No. 101. Initiating load for Catalysm, extract date 2023-06-30 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-06-30.csv
+[2024-06-20T15:22:52.342+0000] {logging_mixin.py:188} INFO - File No. 102. Initiating load for Catalysm, extract date 2023-07-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-07-31.csv
+[2024-06-20T15:22:52.350+0000] {logging_mixin.py:188} INFO - File No. 103. Initiating load for Catalysm, extract date 2023-08-31 /n Filename: /opt/***/data/external-funds/external-funds/rpt-Catalysm.2023-08-31.csv
+[2024-06-20T15:22:52.361+0000] {logging_mixin.py:188} INFO - File No. 104. Initiating load for Trustmind, extract date 20220831 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20220831.csv
+[2024-06-20T15:22:52.370+0000] {logging_mixin.py:188} INFO - File No. 105. Initiating load for Trustmind, extract date 20220930 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20220930.csv
+[2024-06-20T15:22:52.377+0000] {logging_mixin.py:188} INFO - File No. 106. Initiating load for Trustmind, extract date 20221031 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20221031.csv
+[2024-06-20T15:22:52.385+0000] {logging_mixin.py:188} INFO - File No. 107. Initiating load for Trustmind, extract date 20221130 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20221130.csv
+[2024-06-20T15:22:52.395+0000] {logging_mixin.py:188} INFO - File No. 108. Initiating load for Trustmind, extract date 20221231 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20221231.csv
+[2024-06-20T15:22:52.404+0000] {logging_mixin.py:188} INFO - File No. 109. Initiating load for Trustmind, extract date 20230131 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230131.csv
+[2024-06-20T15:22:52.410+0000] {logging_mixin.py:188} INFO - File No. 110. Initiating load for Trustmind, extract date 20230228 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230228.csv
+[2024-06-20T15:22:52.417+0000] {logging_mixin.py:188} INFO - File No. 111. Initiating load for Trustmind, extract date 20230331 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230331.csv
+[2024-06-20T15:22:52.423+0000] {logging_mixin.py:188} INFO - File No. 112. Initiating load for Trustmind, extract date 20230430 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230430.csv
+[2024-06-20T15:22:52.430+0000] {logging_mixin.py:188} INFO - File No. 113. Initiating load for Trustmind, extract date 20230531 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230531.csv
+[2024-06-20T15:22:52.445+0000] {logging_mixin.py:188} INFO - File No. 114. Initiating load for Trustmind, extract date 20230630 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230630.csv
+[2024-06-20T15:22:52.465+0000] {logging_mixin.py:188} INFO - File No. 115. Initiating load for Trustmind, extract date 20230731 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230731.csv
+[2024-06-20T15:22:52.475+0000] {logging_mixin.py:188} INFO - File No. 116. Initiating load for Trustmind, extract date 20230831 /n Filename: /opt/***/data/external-funds/external-funds/TT_monthly_Trustmind.20230831.csv
+[2024-06-20T15:22:52.493+0000] {logging_mixin.py:188} INFO - File No. 117. Initiating load for Virtous, extract date 01-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.01-31-2023 - securities.csv
+[2024-06-20T15:22:52.507+0000] {logging_mixin.py:188} INFO - File No. 118. Initiating load for Virtous, extract date 02-28-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.02-28-2023 - securities.csv
+[2024-06-20T15:22:52.515+0000] {logging_mixin.py:188} INFO - File No. 119. Initiating load for Virtous, extract date 03-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.03-31-2023 - securities.csv
+[2024-06-20T15:22:52.522+0000] {logging_mixin.py:188} INFO - File No. 120. Initiating load for Virtous, extract date 04-30-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.04-30-2023 - securities.csv
+[2024-06-20T15:22:52.531+0000] {logging_mixin.py:188} INFO - File No. 121. Initiating load for Virtous, extract date 05-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.05-31-2023 - securities.csv
+[2024-06-20T15:22:52.543+0000] {logging_mixin.py:188} INFO - File No. 122. Initiating load for Virtous, extract date 06-30-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.06-30-2023 - securities.csv
+[2024-06-20T15:22:52.554+0000] {logging_mixin.py:188} INFO - File No. 123. Initiating load for Virtous, extract date 07-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.07-31-2023 - securities.csv
+[2024-06-20T15:22:52.563+0000] {logging_mixin.py:188} INFO - File No. 124. Initiating load for Virtous, extract date 08-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.08-31-2022 - securities.csv
+[2024-06-20T15:22:52.571+0000] {logging_mixin.py:188} INFO - File No. 125. Initiating load for Virtous, extract date 08-31-2023 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.08-31-2023 - securities.csv
+[2024-06-20T15:22:52.580+0000] {logging_mixin.py:188} INFO - File No. 126. Initiating load for Virtous, extract date 09-30-2022 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.09-30-2022 - securities.csv
+[2024-06-20T15:22:52.590+0000] {logging_mixin.py:188} INFO - File No. 127. Initiating load for Virtous, extract date 10-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.10-31-2022 - securities.csv
+[2024-06-20T15:22:52.599+0000] {logging_mixin.py:188} INFO - File No. 128. Initiating load for Virtous, extract date 11-30-2022 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.11-30-2022 - securities.csv
+[2024-06-20T15:22:52.608+0000] {logging_mixin.py:188} INFO - File No. 129. Initiating load for Virtous, extract date 12-31-2022 /n Filename: /opt/***/data/external-funds/external-funds/Virtous.12-31-2022 - securities.csv
+[2024-06-20T15:22:52.683+0000] {logging_mixin.py:188} INFO - /opt/***/data/output/landing_file_1718896972678304000.csv
+[2024-06-20T15:22:53.163+0000] {logging_mixin.py:188} INFO - ['financial_type', 'symbol', 'security_name', 'sedol', 'price', 'quantity', 'realised_pl', 'market_value', 'fund_name', 'date', 'hash_uid', 'isin']
+[2024-06-20T15:23:03.223+0000] {connection.py:513} ERROR - Unable to retrieve connection from secrets backend (MetastoreBackend). Checking subsequent secrets backend.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/connection.py", line 508, in get_connection_from_secrets
+    conn = secrets_backend.get_connection(conn_id=conn_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/secrets/metastore.py", line 43, in get_connection
+    return MetastoreBackend._fetch_connection(conn_id, session=session)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 115, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/secrets/metastore.py", line 74, in _fetch_connection
+    conn = session.scalar(select(Connection).where(Connection.conn_id == conn_id).limit(1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-06-20T15:23:03.427+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-20T15:23:29.963+0000] {job.py:218} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/jobs/job.py", line 192, in heartbeat
+    self._merge_from(Job._fetch_from_db(self, session))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 115, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 89, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 435, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 410, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 183, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 98, in wrapped_function
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/jobs/job.py", line 316, in _fetch_from_db
+    session.merge(job)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-06-20T15:23:30.736+0000] {job.py:226} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2024-06-20T15:23:33.400+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/main_dag.py", line 165, in load_table
+    curs = conn.cursor()
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/context.py", line 133, in __getattr__
+    self.var = Connection.get_connection_from_secrets(key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/connection.py", line 519, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `cursor` isn't defined
+[2024-06-20T15:23:33.505+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=testing_dag, task_id=extract_csv_file, run_id=manual__2024-06-20T15:22:20.629517+00:00, execution_date=20240620T152220, start_date=20240620T152250, end_date=20240620T152333
+[2024-06-20T15:23:33.623+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 163 for task extract_csv_file (The conn_id `cursor` isn't defined; 648)
+[2024-06-20T15:23:33.700+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-20T15:23:33.863+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-20T15:23:33.872+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

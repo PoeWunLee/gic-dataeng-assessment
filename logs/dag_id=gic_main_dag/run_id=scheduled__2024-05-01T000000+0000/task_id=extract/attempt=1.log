@@ -1,0 +1,33 @@
+[2024-06-21T02:08:30.787+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-21T02:08:30.811+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: gic_main_dag.extract scheduled__2024-05-01T00:00:00+00:00 [queued]>
+[2024-06-21T02:08:30.821+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: gic_main_dag.extract scheduled__2024-05-01T00:00:00+00:00 [queued]>
+[2024-06-21T02:08:30.823+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-21T02:08:30.841+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): extract> on 2024-05-01 00:00:00+00:00
+[2024-06-21T02:08:30.852+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=711) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-21T02:08:30.854+0000] {standard_task_runner.py:63} INFO - Started process 713 to run task
+[2024-06-21T02:08:30.853+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'gic_main_dag', 'extract', 'scheduled__2024-05-01T00:00:00+00:00', '--job-id', '203', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmp90pqyl4c']
+[2024-06-21T02:08:30.855+0000] {standard_task_runner.py:91} INFO - Job 203: Subtask extract
+[2024-06-21T02:08:30.901+0000] {task_command.py:426} INFO - Running <TaskInstance: gic_main_dag.extract scheduled__2024-05-01T00:00:00+00:00 [running]> on host 39e4faefdcb7
+[2024-06-21T02:08:30.996+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='gic_main_dag' AIRFLOW_CTX_TASK_ID='extract' AIRFLOW_CTX_EXECUTION_DATE='2024-05-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-01T00:00:00+00:00'
+[2024-06-21T02:08:30.998+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-21T02:08:31.105+0000] {python.py:237} INFO - Done. Returned value was:                                 filename  ...              hash_uid
+0     Applebead.28-02-2023 breakdown.csv  ...   6997345035616037044
+1     Applebead.30-04-2023 breakdown.csv  ...   3906319916307158396
+2     Applebead.30-06-2023 breakdown.csv  ...  16138502287709120854
+3     Applebead.30-09-2022 breakdown.csv  ...   5283134287934033315
+4     Applebead.30-11-2022 breakdown.csv  ...  11074178226377473687
+..                                   ...  ...                   ...
+125  Virtous.08-31-2023 - securities.csv  ...   5743750789991968232
+126  Virtous.09-30-2022 - securities.csv  ...   1367661161881664065
+127  Virtous.10-31-2022 - securities.csv  ...    829228941715233770
+128  Virtous.11-30-2022 - securities.csv  ...   7333230059228484751
+129  Virtous.12-31-2022 - securities.csv  ...  15093908406875319090
+
+[130 rows x 7 columns]
+[2024-06-21T02:08:31.171+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-21T02:08:31.324+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=gic_main_dag, task_id=extract, run_id=scheduled__2024-05-01T00:00:00+00:00, execution_date=20240501T000000, start_date=20240621T020830, end_date=20240621T020831
+[2024-06-21T02:08:31.349+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-21T02:08:31.374+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-21T02:08:31.376+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

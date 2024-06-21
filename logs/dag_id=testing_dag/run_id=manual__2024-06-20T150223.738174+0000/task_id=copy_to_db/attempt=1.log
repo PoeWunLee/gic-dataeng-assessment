@@ -1,0 +1,39 @@
+[2024-06-20T15:02:32.683+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-20T15:02:32.724+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: testing_dag.copy_to_db manual__2024-06-20T15:02:23.738174+00:00 [queued]>
+[2024-06-20T15:02:32.735+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: testing_dag.copy_to_db manual__2024-06-20T15:02:23.738174+00:00 [queued]>
+[2024-06-20T15:02:32.736+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-20T15:02:32.753+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): copy_to_db> on 2024-06-20 15:02:23.738174+00:00
+[2024-06-20T15:02:32.770+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=339) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-20T15:02:32.769+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'testing_dag', 'copy_to_db', 'manual__2024-06-20T15:02:23.738174+00:00', '--job-id', '156', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmp5mxi4wo9']
+[2024-06-20T15:02:32.777+0000] {standard_task_runner.py:63} INFO - Started process 341 to run task
+[2024-06-20T15:02:32.777+0000] {standard_task_runner.py:91} INFO - Job 156: Subtask copy_to_db
+[2024-06-20T15:02:32.887+0000] {task_command.py:426} INFO - Running <TaskInstance: testing_dag.copy_to_db manual__2024-06-20T15:02:23.738174+00:00 [running]> on host 39e4faefdcb7
+[2024-06-20T15:02:33.005+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='testing_dag' AIRFLOW_CTX_TASK_ID='copy_to_db' AIRFLOW_CTX_EXECUTION_DATE='2024-06-20T15:02:23.738174+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-20T15:02:23.738174+00:00'
+[2024-06-20T15:02:33.011+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-20T15:02:33.016+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-06-20T15:02:33.020+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'docker cp /opt/***/data/output/landing_file_test.csv postgres-db-volume:/var/lib/postgresql/data']
+[2024-06-20T15:02:33.047+0000] {subprocess.py:86} INFO - Output:
+[2024-06-20T15:02:33.365+0000] {subprocess.py:93} INFO - Error response from daemon: No such container: postgres-db-volume
+[2024-06-20T15:02:33.367+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-06-20T15:02:33.369+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-20T15:02:33.387+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-06-20T15:02:33.396+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=testing_dag, task_id=copy_to_db, run_id=manual__2024-06-20T15:02:23.738174+00:00, execution_date=20240620T150223, start_date=20240620T150232, end_date=20240620T150233
+[2024-06-20T15:02:33.418+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 156 for task copy_to_db (Bash command failed. The command returned a non-zero exit code 1.; 341)
+[2024-06-20T15:02:33.439+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-20T15:02:33.455+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-20T15:02:33.457+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
