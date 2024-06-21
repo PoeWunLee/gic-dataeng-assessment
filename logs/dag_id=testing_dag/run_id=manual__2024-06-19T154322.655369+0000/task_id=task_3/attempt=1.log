@@ -1,3 +1,0 @@
-[2024-06-19T15:43:33.002+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
-[2024-06-19T15:43:33.965+0000] {taskinstance.py:2066} INFO - Dependencies not met for <TaskInstance: testing_dag.task_3 manual__2024-06-19T15:43:22.655369+00:00 [skipped]>, dependency 'Task Instance State' FAILED: Task is in the 'skipped' state.
-[2024-06-19T15:43:33.985+0000] {local_task_job_runner.py:163} INFO - Task is not able to be run
