@@ -4,6 +4,7 @@ import sys
 import os
 import re
 import pandas as pd
+from pandas.tseries.offsets import MonthEnd
 import logging
 
 from datetime import datetime, timedelta
@@ -11,10 +12,10 @@ from datetime import datetime, timedelta
 from airflow.models.dag import DAG
 from airflow.operators.python import PythonOperator
 from airflow.providers.common.sql.operators.sql import SQLExecuteQueryOperator
+from airflow.models import Variable
 
 #initialise path
 sys.path.append(os.getcwd())
-
 
 
 #------Extract Functions--------#
@@ -108,8 +109,9 @@ def extract(**kwargs):
 
    #[TO BE STATE IN PRODUCTION WHEN SCHEDULE FOLLOWS MONTHLY CADENCE]
    #filter by current latest month in date column of file_df
+   #last_mth_date = (pd.to_datetime(int(load_time), unit='ns') +  MonthEnd(-1)).strftime('%Y-%m-%d')
+   #file_df = file_df.loc[file_df['date'].dt.strftime('%Y-%m-%d')==last_mth_date]
 
-   
    file_df.to_csv(os.path.join(os.getcwd(), 'data/output/control_table_{}.csv').format(load_time),index=False)
 
    return file_df
@@ -158,7 +160,6 @@ def transform(**kwargs):
    merged_df.to_csv(output_file_path, index=False)
    
 
-
    return merged_df, output_file_path
 
 #---Load Functions---#
@@ -183,15 +184,13 @@ def load(**kwargs):
    #specifying col names for copy query
    col_names = ','.join(list(df.columns))
    print(col_names)
-
-
    
    #establish postgres connection
    try: 
       conn = psycopg2.connect(
          database="postgres", 
-         user='airflow', 
-         password='airflow', 
+         user=Variable.get("db_username"), #secrets management
+         password=Variable.get("db_password"), #secrets management
          host = 'host.docker.internal',
          port= '5432'
       )
@@ -234,7 +233,7 @@ with DAG(
         "retries": 1,
         "retry_delay": timedelta(minutes=5),
     },
-    description="A simple tutorial DAG",
+    description="Main ETL DAG",
     schedule_interval='0 0 1 * *', 
     start_date=datetime(2021, 1, 1),  #assumes file delivery happen at end of each month and ingestion happens T+1
     catchup=False,
@@ -242,42 +241,26 @@ with DAG(
     params={"load_time":pd.Timestamp.utcnow().value}
 ) as dag:
 
-
-    #task to initialise reference table in Postgresql
-    t1 = SQLExecuteQueryOperator(
-       task_id="initialise_reference_table_creation",
-       conn_id="cursor",
-       sql='scripts/master-reference-sql.sql'
-    
-    )
-
-    #task for create DDL on Postgres to initialise tables required for external fund data and other views
-    t2 = SQLExecuteQueryOperator(
-       task_id="initialise_external_data_table",
-       conn_id="cursor",
-       sql='scripts/load-table-ddl.sql'
-    )
-
     #task to perform extract step
-    t3 = PythonOperator(
+    t1 = PythonOperator(
       task_id = "extract",
       python_callable=extract,
       op_kwargs={"load_time": "{{params.load_time}}"}  
     )
 
     #task to perform transform step
-    t4 = PythonOperator(
+    t2 = PythonOperator(
       task_id = "transform",
       python_callable=transform,
       op_kwargs={"load_time": "{{params.load_time}}"}  
     )
 
     #task to perform load step
-    t5 = PythonOperator(
+    t3 = PythonOperator(
       task_id = "load",
       python_callable=load,
       op_kwargs={"load_time": "{{params.load_time}}"}
     )
 
 
-    t1>>t2>>t3>>t4>>t5
+    t1>>t2>>t3
