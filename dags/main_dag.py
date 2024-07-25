@@ -17,7 +17,6 @@ from airflow.models import Variable
 #initialise path
 sys.path.append(os.getcwd())
 
-
 #------Extract Functions--------#
 
 def extract_csv_filenames(dir ='data/external-funds/external-funds' ):
@@ -109,6 +108,7 @@ def extract(**kwargs):
 
    #[TO BE STATE IN PRODUCTION WHEN SCHEDULE FOLLOWS MONTHLY CADENCE]
    #filter by current latest month in date column of file_df
+   
    #last_mth_date = (pd.to_datetime(int(load_time), unit='ns') +  MonthEnd(-1)).strftime('%Y-%m-%d')
    #file_df = file_df.loc[file_df['date'].dt.strftime('%Y-%m-%d')==last_mth_date]
 
